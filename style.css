@@ -48,7 +48,7 @@ html {
     /*margin: auto;*/
 }
 
-.header-column_padding{
+.header-column--padding{
     padding-left: 20px;
 }
 
@@ -65,10 +65,15 @@ html {
 }
 .header-column__icon{
     display: flex;
-    background: #FF3E79;
+    transition: 0.2s;
+    background: rgba(255, 62, 121, 1);
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+.header-column__icon--hover:hover{
+    background: rgba(255, 62, 121, 0.6);
+    cursor: pointer;
 }
 
 .header-column__img{
@@ -130,6 +135,7 @@ html {
 
 .main-list__link{
     line-height: 18px;
+    transition: 0.5s;
     padding: 8px;
     color: #7E7E82;
     border: 2px solid transparent;
@@ -137,7 +143,7 @@ html {
     text-decoration: none;
 }
 
-.main-list__link_hover:hover{
+.main-list__link--hover:hover{
     box-sizing: border-box;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
@@ -183,7 +189,7 @@ html {
     width: 100%;
 }
 
-.header-column_none1120{
+.header-column--none1120{
    display: none;
 }
 
@@ -264,7 +270,7 @@ html {
         margin-left: -32px;
     }
 
-    .header-column_none1120{
+    .header-column--none1120{
         display: flex;
         gap: 32px;
     }
@@ -273,14 +279,14 @@ html {
         gap: 8px;
     }
 
-    .header-column_none1120 .l-header-column:first-child::before{
+    .header-column--none1120 .l-header-column:first-child::before{
         font-size: 16px;
         line-height: 24px;
         margin: auto 0;
         content: "Оставить заявку";
     }
 
-    .header-column_none1120 .l-header-column:last-child::before{
+    .header-column--none1120 .l-header-column:last-child::before{
         font-size: 16px;
         line-height: 24px;
         margin: auto 0;
