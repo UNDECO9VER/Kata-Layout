@@ -1,130 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="style.css" rel="stylesheet">
     <title>CSP</title>
-  </head>
+</head>
 
-  <body>
-    <header class="l-header">
+<body class="page">
+<header class="header-layout">
+    <div class="header">
+        <ul class="list-menu list-links--none">
+            <li class="list-links__item">
+                <a class="icon-common">
+                    <img alt="menu" class="header-column__img" src="img/icon1.png">
+                </a>
+            </li>
+            <li class="list-links__item">
+                <a class="header-column__link">
+                    <img alt="logo" class="header_column__logo" src="img/logo.png">
+                </a>
+            </li>
+        </ul>
 
-        <div class="header-column">
-          <a class="header-column__icon header-column__icon--hover">
-            <img class="header-column__img" src="img/icon1.png" alt="menu">
-          </a>
-          <div class="header-column header-column_before-menu">
-            <a class="header-column__link">
-              <img src="img/logo.png" alt="logo" class="header_column__logo">
-            </a>
-          </div>
-        </div>
+        <ul class="list-links">
+            <li class="list-links__item list-links--none">
+                <ul class="sub-list">
+                    <li class="sub-list__item">
+                        <a class="icon-common">
+                            <img alt="menu" class="header-column__img" src="img/icon2.png">
+                        </a>
+                    </li>
+                    <li class="sub-list__item">
+                        <a class="icon-common header-column__icon--position">
+                            <img alt="menu" class="header-column__img" src="img/icon3.png">
+                        </a>
+                    </li>
+                    <li class="sub-list__item">
+                        <a class="icon-common header-column__icon--position">
+                            <img alt="menu" class="header-column__img" src="img/icon4.png">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-links__item header-column--padding">
+                <ul class="sub-list">
+                    <li class="sub-list__item">
+                        <label for="leave-request" class="header-column__link-description">Оставить заявку</label>
+                        <a id="leave-request" href="https://vk.com/?lang=en" class="icon-common">
+                            <img alt="menu" class="header-column__img" src="img/icon5.png">
+                        </a>
+                    </li>
+                    <li class="sub-list__item">
+                        <label class="header-column__link-description">Статус ремонта</label>
+                        <a class="icon-common header-column__icon--position">
+                            <img alt="menu" class="header-column__img" src="img/icon6.png">
+                        </a>
+                    </li>
+                </ul>
 
 
-        <div class="header-column ">
-          <div class="header-column l-column_none">
-            <a class="header-column__icon header-column__icon--hover">
-              <img class="header-column__img" src="img/icon2.png" alt="menu">
-            </a>
-            <a class="header-column__icon header-column__icon--hover header-column__icon--position">
-              <img class="header-column__img" src="img/icon3.png" alt="menu">
-            </a>
-            <a class="header-column__icon header-column__icon--hover header-column__icon--position">
-              <img class="header-column__img" src="img/icon4.png" alt="menu">
-            </a>
-          </div>
-          <div class="header-column  header-column_before header-column--padding">
-            <a class="header-column__icon header-column__icon--hover">
-              <img class="header-column__img" src="img/icon5.png" alt="menu">
-            </a>
-            <a class="header-column__icon header-column__icon--hover header-column__icon--position">
-              <img class="header-column__img" src="img/icon6.png" alt="menu">
-            </a>
-          </div>
-        </div>
-
-    </header>
-
-    <main class="l-main">
-        <div class="main-title">
-          <h1 class="title title_before">
+            </li>
+        </ul>
+    </div>
+    <div class="main-title">
+        <h1 class="title title_before">
             Услуги и сервисы
-          </h1>
-          <div class="header-column  header-column--none1120">
-            <div class="l-header-column">
-              <a class="header-column__icon header-column__icon--hover">
-                <img class="header-column__img" src="img/icon5.png" alt="menu">
-              </a>
-            </div>
-            <div class="l-header-column">
-              <a class="header-column__icon header-column__icon--hover header-column__icon--position">
-                <img class="header-column__img" src="img/icon6.png" alt="menu">
-              </a>
-            </div>
-          </div>
-        </div>
-      <ul class="main-list">
-        <li class="main-list__item">
-          <a href="#" class="main-list__link main-list__link--hover">
-            Ремонтируемые устройства
-          </a>
-        </li>
-        <li class="main-list__item">
-          <a href="#" class="main-list__link main-list__link--hover">
-            Ремонтируемые бренды
-          </a>
-        </li>
-        <li class="main-list__item">
-          <a href="#" class="main-list__link main-list__link--hover">
-            Цены на услуги
-          </a>
-        </li>
-        <li class="main-list__item">
-          <a href="#" class="main-list__link main-list__link--hover">
-            Адреса сервисных центров
-          </a>
-        </li>
-        <li class="main-list__item">
-          <a href="#" class="main-list__link main-list__link--hover">
-            Специальные цены
-          </a>
-        </li>
-        <li class="main-list__item">
-          <a href="#" class="main-list__link main-list__link--hover">
-            Специальные цены
-          </a>
-        </li>
-        <li class="main-list__item">
-          <a href="#" class="main-list__link main-list__link--hover">
-            Отзыввы
-          </a>
-        </li>
-      </ul>
-      <div class="desc-img">
-        <div class="description">
-          <div class="description__text">
-            <p class="description__p">
-              Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            </p>
-            <br>
-            <p class="description__p">
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            </p>
-          </div>
-          <div class="description__layout-button">
-            <button class="description__button">
-              Читать далее
-            </button>
-          </div>
-        </div>
-        <div class="description-image">
-          <img src="img/desc_img.png" alt="image" class="description-image__image">
-        </div>
-      </div>
-    </main>
+        </h1>
+    </div>
+</header>
 
-    <footer class="page-footer">
-    </footer>
-  </body>
+<main class="l-main">
+    <nav>
+        <ul class="main-list">
+            <li class="main-list__item">
+                <a class="main-list__link" href="#">
+                    Ремонтируемые устройства
+                </a>
+            </li>
+            <li class="main-list__item">
+                <a class="main-list__link" href="#">
+                    Ремонтируемые бренды
+                </a>
+            </li>
+            <li class="main-list__item">
+                <a class="main-list__link" href="#">
+                    Цены на услуги
+                </a>
+            </li>
+            <li class="main-list__item">
+                <a class="main-list__link" href="#">
+                    Адреса сервисных центров
+                </a>
+            </li>
+            <li class="main-list__item">
+                <a class="main-list__link" href="#">
+                    Специальные цены
+                </a>
+            </li>
+            <li class="main-list__item">
+                <a class="main-list__link" href="#">
+                    Специальные цены
+                </a>
+            </li>
+            <li class="main-list__item">
+                <a class="main-list__link" href="#">
+                    Отзыввы
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="desc-img">
+        <div class="description">
+            <div class="description__text">
+                <p class="description__p">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="description__p">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                    очередь, советуют нас родным и близким.
+                </p>
+            </div>
+            <button class="description__button">
+                Читать далее
+            </button>
+        </div>
+        <script>
+            const arr = [10, 12, 15, 21];
+            for (var i = 0; i < arr.length; i++) {
+                setTimeout(function () {
+                    console.log('Index: ' + i + ', element: ' + arr[i]);
+                }, 3000);
+            }
+        </script>
+        <div class="description-image">
+            <img alt="image" class="description-image__image" src="img/desc_img.png">
+        </div>
+    </div>
+</main>
+</body>
 </html>
