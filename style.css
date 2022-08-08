@@ -262,6 +262,7 @@ html {
 @media (min-width: 768px) {
     .list-links__item:first-child .sub-list {
         display: flex;
+        flex-direction: row;
     }
     .header {
         padding-left: 24px;
