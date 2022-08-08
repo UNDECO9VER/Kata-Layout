@@ -33,6 +33,11 @@ html {
     gap: 16px;
 }
 
+.page {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 .sub-list__item{
     display: flex;
     gap: 8px;
@@ -331,13 +336,7 @@ html {
 
 @media (min-width: 1120px) {
 
-    .page {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        max-width: 1120px;
-        margin: 0 auto;
-    }
+
 
     .callback_list span{
         position: absolute;
