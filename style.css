@@ -21,6 +21,7 @@
 
 html {
     box-sizing: border-box;
+    font-family: "TT Lakes";
 }
 
 *, *:before, *:after {
@@ -33,7 +34,7 @@ html {
     gap: 16px;
 }
 
-.page {
+.main-container {
     max-width: 1120px;
     margin: 0 auto;
 }
@@ -127,20 +128,20 @@ html {
     gap: 24px;
     flex-direction: column;
     background: #F8F8F8;
-    font-family: "TT Lakes";
+
 }
 
 .title {
+    display: flex;
+    gap: 16px;
     white-space: nowrap;
     font-size: 28px;
-    margin-left: 16px;
 }
 
 .main-title {
-    position: relative;
     font-size: 28px;
-    margin-top: 24px;
     flex-direction: row;
+    padding-top: 24px;
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: 2;
@@ -148,37 +149,32 @@ html {
 
 .title::before {
     content: "";
-    margin-left: -16px;
-    position: absolute;
     height: 40px;
+    border: 2px solid #41F6D7;
     border-radius: 0 4px 4px 0;
-    width: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #41F6D7;
 }
 .navigation{
     background: #F8F8F8;
 }
 .nav-list {
     display: flex;
-    margin-left: 16px;
+    padding: 10px 16px;
     overflow-y: hidden;
     overflow-x: auto;
+    gap: 5px 5px;
 }
 
 .nav-list__item {
     white-space: nowrap;
-    display: flex;
     flex-direction: column;
     list-style-type: none;
-    height: 40px;
 }
 
 .nav-list__link {
+    display: block;
     line-height: 18px;
     transition: 0.5s;
-    padding: 8px;
+    padding: 8px 12px;
     color: #7E7E82;
     border: 2px solid transparent;
     border-radius: 6px;
@@ -205,8 +201,7 @@ html {
     gap: 25px;
     max-height: 95px;
     overflow: hidden;
-    font-size: 14px;
-    line-height: 20px;
+
 }
 
 .description-section__button {
@@ -232,9 +227,16 @@ html {
     gap: 16px;
 }
 
-.description-section__image {
+.description-section__image{
+    display: block;
+    margin: 0 auto;
     width: 100%;
-    max-height: 500px;
+}
+
+.description-section__p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
 }
 
 .list-links__item:first-child .sub-list {
@@ -250,7 +252,11 @@ html {
 }
 
 .description-section__image-layout{
-    height: 100%;
+    min-height: 176px;
+}
+
+.list-menu .list-links__item:last-child:before{
+    display: none;
 }
 
 .callback_list span{
@@ -292,6 +298,7 @@ html {
 
     .description-section__image-layout {
         width: 50%;
+        min-height: 260px;
     }
 
     .description-section__description {
@@ -302,11 +309,6 @@ html {
 
     .description-section__image {
         width: 100%;
-        height: 100%;
-    }
-
-    .header-column_before-menu {
-        padding-left: 20px;
     }
 
     .cps-logo-link {
@@ -330,33 +332,52 @@ html {
         background: #EAEAEA;
     }
 
+    .list-menu .list-links__item:last-child:before{
+        display: flex;
+    }
+
     .description-section__image {
         border-radius: 6px;
+    }
+
+    .nav-list{
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
 @media (min-width: 1120px) {
 
+    a{
+        text-decoration: none;
+    }
 
+    .description-section__image-layout{
+        min-height: 176px;
+    }
+    .header-layout{
+        padding-top: 24px;
+    }
 
     .callback_list span{
-        position: absolute;
         white-space: nowrap;
         display: flex;
-        left: 100%;
-        transform: translateX(-140%);
-        font-family: "TT Lakes";
         color: #1B1C21;
         transition-duration: 0.2s;
     }
 
     .callback_list{
-        gap: 150px;
+        gap: 16px;
     }
 
-    .icon-common{
-        text-decoration: none;
-        position: relative;
+    .icon-with-description{
+        align-items: center;
+        gap: 8px;
+        display: flex;
+    }
+
+    .icon-with-description:hover{
+        opacity: 0.6;
     }
 
     .list-menu {
@@ -368,15 +389,14 @@ html {
     }
 
     .main-title {
+        padding-top: 0;
         justify-content: space-between;
-        padding: 0 32px;
         grid-row-start: 1;
         grid-column-end: 1;
     }
 
     .header {
         padding: 0 32px;
-        padding-top: 24px;
         grid-column-start: 2;
         grid-row-start: 1;
         background: none;
@@ -389,11 +409,11 @@ html {
     }
 
     .title {
-        margin-left: 0;
+        gap: 32px;
     }
 
     .title::before {
-        margin-left: -32px;
+
     }
 
     .list-links__item {
@@ -402,7 +422,8 @@ html {
     }
 
     .nav-list {
-        margin: 0 32px;
+        padding-left: 32px;
+        padding-right: 32px;
         flex-wrap: wrap;
     }
 
