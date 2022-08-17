@@ -8,7 +8,7 @@
     height: 100vh;
     flex-direction: column;
     font-family: "TT Lakes";
-    justify-content: space-between;
+    gap: 50px;
     font-size: 16px;
     padding: 24px;
     width: 320px;
@@ -17,48 +17,57 @@
 
 .sidebar-header {
     display: flex;
-    gap: 40px;
-    flex-direction: column;
-}
-
-.sidebar-header--layout{
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.list-links__item:last-child:before {
+.sidebar-header--layout{
+    display: flex;
+
+
+}
+
+.sidebar-header__item:last-child:before {
     display: none;
 }
 
-.cps-logo-link {
-    padding: 0;
-}
-
-.sidebar-nav-list {
+.sidebar-header__list{
+    gap: 16px;
+    display: flex;
+    align-items: center;
     list-style: none;
 }
 
-.sidebar-nav-list__item {
+.sidebar-nav__list {
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+}
+
+.sidebar-nav__item {
     padding: 16px 0;
+}
+
+.logo{
+    padding: 0;
 }
 
 .active {
     color: #7E7E82;
 }
 
-.sidebar-nav-list__item {
+.sidebar-nav__item {
     position: relative;
     cursor: pointer;
     transition-duration: 0.2s;
 }
 
-.sidebar-nav-list__item:not(.active):hover {
+.sidebar-nav__item:not(.active):hover {
     margin-left: 10px;
     font-weight: bold;
 }
 
-.sidebar-nav-list__item.active a::before {
+.sidebar-nav__item.active a::before {
     content: "";
     margin-left: -24px;
     position: absolute;
@@ -94,11 +103,19 @@
 .contacts__number{
     font-weight: bold;
     font-size: 24px;
+    line-height: 32px;
 }
 
 .sidebar-footer{
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.contacts__list{
+    display: flex;
+    gap: 16px;
+    list-style: none;
 }
 

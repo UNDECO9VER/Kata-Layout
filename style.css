@@ -13,7 +13,7 @@
     font-style: normal;
 }
 
-.nav-list::-webkit-scrollbar {
+.nav__list::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
@@ -109,6 +109,16 @@ html {
     height: 40px;
 }
 
+.icon__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 62, 121, 1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
 .icon-common:hover {
     opacity: 0.6;
     cursor: pointer;
@@ -145,10 +155,10 @@ html {
     border: 2px solid #41F6D7;
     border-radius: 0 4px 4px 0;
 }
-.navigation{
+.nav{
     background: #F8F8F8;
 }
-.nav-list {
+.nav__list {
     display: flex;
     padding: 10px 16px;
     overflow-y: hidden;
@@ -156,12 +166,12 @@ html {
     gap: 5px 5px;
 }
 
-.nav-list__item {
+.nav__item {
     white-space: nowrap;
     list-style-type: none;
 }
 
-.nav-list__link {
+.nav__link {
     display: block;
     line-height: 18px;
     transition: 0.5s;
@@ -172,7 +182,7 @@ html {
     text-decoration: none;
 }
 
-.nav-list__link:hover {
+.nav__link:hover {
     box-sizing: border-box;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
@@ -218,13 +228,13 @@ html {
     display: none;
 }
 
-.cps-logo-link{
+.logo{
     height: 51px;
     cursor: pointer;
 
 }
 
-.cps-logo-link__img{
+.logo__img{
     height: 100%;
 }
 
@@ -258,7 +268,7 @@ html {
     display: none;
 }
 
-.icon-with-description_description{
+.icon__text{
     display: none;
 }
 
@@ -295,7 +305,7 @@ html {
         padding: 0 0;
     }
 
-    .cps-logo-link {
+    .logo {
         padding-left: 16px;
     }
 
@@ -324,7 +334,7 @@ html {
     }
 
 
-    .nav-list{
+    .nav__list{
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -348,20 +358,20 @@ html {
         padding-top: 24px;
     }
 
-    .icon-with-description_description{
+    .icon__text{
         white-space: nowrap;
         display: flex;
         color: #1B1C21;
         transition-duration: 0.2s;
     }
 
-    .icon-with-description{
+    .icon{
         align-items: center;
         gap: 8px;
         display: flex;
     }
 
-    .icon-with-description:hover{
+    .icon:hover{
         opacity: 0.6;
     }
 
@@ -381,6 +391,8 @@ html {
     }
 
     .header {
+        padding-top: 42px;
+        padding-right: 32px;
         grid-column-start: 2;
         grid-row-start: 1;
         background: none;
@@ -405,13 +417,13 @@ html {
         gap: 8px;
     }
 
-    .nav-list {
+    .nav__list {
         padding-left: 32px;
         padding-right: 32px;
         flex-wrap: wrap;
     }
     .header__panel{
-        padding-right: 32px;
+        padding: 0;
         grid-column-start: 2;
         background: #F8F8F8;
     }
