@@ -99,6 +99,7 @@ ul{
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     color: #7E7E82;
 }
+
 .technique-slide .dropdown-image{
     align-self: end;
 }
@@ -131,12 +132,7 @@ ul{
     opacity: 0.6;
 }
 
-.common-slider__list{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    height: auto;
-    transition: max-height 0.5s ease;
-}
+
 
 .more-btn__img{
     transition: 0.5s;
@@ -180,6 +176,7 @@ ul{
     .expanded{
         max-height: 100vh;
     }
+
 }
 
 @media (min-width: 1120px){
