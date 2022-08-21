@@ -8,94 +8,92 @@
     <title>CSP</title>
 </head>
 
-<body class="side-bar">
-<main class="main">
-    <div class="sidebar-header">
-            <ul class="sidebar-header__list">
-                <li class="sidebar-header__item">
-                    <a class="icon-common">
-                        <img alt="menu" class="header-column__img" src="img/icon8.png">
-                    </a>
-                </li>
-                <li class="sidebar-header__item">
-                    <a class="logo">
-                        <img alt="logo" class="logo__img" src="img/logo.png">
-                    </a>
-                </li>
-            </ul>
+<body>
+<div class="sidebar">
+    <ul class="sidebar__list">
+        <li class="sidebar__item">
+            <a class="icon-common">
+                <img alt="menu" class="header-column__img" src="img/icon8.png">
+            </a>
+        </li>
+        <li class="sidebar__item">
+            <a class="logo">
+                <img alt="logo" class="logo__img" src="img/logo.png">
+            </a>
+        </li>
+        <li class="sidebar__item">
             <a class="icon-common">
                 <img alt="menu" class="header-column__img" src="img/icon7.png">
             </a>
-    </div>
-        <nav class="sidebar-nav">
-            <ul class="sidebar-nav__list">
-                <li class="sidebar-nav__item active">
-                    <a>Ремонт техники</a>
-                </li>
-                <li class="sidebar-nav__item">
-                    <a>Услуги и сервисы</a>
-                </li>
-                <li class="sidebar-nav__item">
-                    <a>Корпоративным клиентам</a>
-                </li>
-                <li class="sidebar-nav__item">
-                    <a>Продавцам техники</a>
-                </li>
-                <li class="sidebar-nav__item">
-                    <a>Партнерам</a>
-                </li>
-                <li class="sidebar-nav__item">
-                    <a>Производителям</a>
-                </li>
-                <li class="sidebar-nav__item">
-                    <a>Наши сервисные центры</a>
-                </li>
-                <li class="sidebar-nav__item">
-                    <a>Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        </li>
+    </ul>
 
-    <div class="sidebar-footer">
-        <div class="contacts">
-            <ul class="contacts__list">
-                <li class="contacts-list__item">
-                    <a class="icon-common">
-                        <img alt="menu" class="header-column__img" src="img/icon2.png">
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a class="icon-common header-column__icon--position">
-                        <img alt="menu" class="header-column__img" src="img/icon3.png">
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a class="icon-common header-column__icon--position">
-                        <img alt="menu" class="header-column__img" src="img/icon4.png">
-                    </a>
-                </li>
-            </ul>
-            <div class="contacts__email">
-                mail@cps.com
-            </div>
-            <div class="contacts__number">
-                8 800 890 8900
-            </div>
-        </div>
-        <ul class="language-switch-list">
-            <li class="language-switch-list__item active">
-                <a>RU</a>
+    <nav class="sidebar-nav">
+        <ul class="sidebar-nav__list">
+            <li class="sidebar-nav__item">
+                <a>Ремонт техники</a>
             </li>
-            <li class="language-switch-list__item">
-                <a>EN</a>
+            <li class="sidebar-nav__item">
+                <a>Услуги и сервисы</a>
             </li>
-            <li class="language-switch-list__item">
-                <a>CH</a>
+            <li class="sidebar-nav__item">
+                <a>Корпоративным клиентам</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a>Продавцам техники</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a>Партнерам</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a>Производителям</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a>Наши сервисные центры</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a>Контакты</a>
             </li>
         </ul>
+    </nav>
+
+    <div class="sidebar__contacts">
+        <ul class="contacts-list">
+            <li class="contacts-list__item">
+                <a class="icon-common">
+                    <img alt="menu" class="header-column__img" src="img/icon2.png">
+                </a>
+            </li>
+            <li class="contacts-list__item">
+                <a class="icon-common header-column__icon--position">
+                    <img alt="menu" class="header-column__img" src="img/icon3.png">
+                </a>
+            </li>
+            <li class="contacts-list__item">
+                <a class="icon-common header-column__icon--position">
+                    <img alt="menu" class="header-column__img" src="img/icon4.png">
+                </a>
+            </li>
+        </ul>
+        <button class="sidebar__email">
+            mail@cps.com
+        </button>
+        <button class="sidebar__number">
+            8 800 890 8900
+        </button>
+    </div>
+    <div class="sidebar__lang-form">
+        <input id="RU" checked class="sidebar__input" name="contact" type="radio" value="RU">
+        <label for="RU" class="sidebar__label">RU</label>
+
+        <input id="EN" class="sidebar__input" name="contact" type="radio" value="EN">
+        <label for="EN" class="sidebar__label">EN</label>
+
+        <input id="CH" class="sidebar__input" name="contact" type="radio" value="CH">
+        <label for="CH" class="sidebar__label">CH</label>
     </div>
 
 
-</main>
+</div>
 </body>
 </html>

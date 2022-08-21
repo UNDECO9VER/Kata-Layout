@@ -3,7 +3,19 @@
     padding: 0;
 }
 
-.main {
+ul{
+    list-style: none;
+}
+
+button{
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sidebar {
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -27,21 +39,32 @@
 
 }
 
-.sidebar-header__item:last-child:before {
+.sidebar__item:last-child:before {
     display: none;
 }
 
-.sidebar-header__list{
+.sidebar__list{
     gap: 16px;
     display: flex;
     align-items: center;
-    list-style: none;
+}
+
+.sidebar-nav{
+    flex-grow: 1;
 }
 
 .sidebar-nav__list {
     font-size: 16px;
     line-height: 24px;
-    list-style: none;
+}
+.sidebar__item:nth-child(2){
+    flex-grow: 1;
+}
+.sidebar-nav__item {
+    padding: 16px 0;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .sidebar-nav__item {
@@ -49,40 +72,29 @@
 }
 
 .logo{
+    display: block;
+    height: 51px;
     padding: 0;
 }
 
-.active {
+.sidebar-nav__item:hover {
     color: #7E7E82;
 }
 
-.sidebar-nav__item {
-    position: relative;
-    cursor: pointer;
-    transition-duration: 0.2s;
-}
-
-.sidebar-nav__item:not(.active):hover {
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-.sidebar-nav__item.active a::before {
+.sidebar-nav__item:hover::before {
     content: "";
     margin-left: -24px;
+    margin-top: -4px;
     position: absolute;
     height: 32px;
+    border: 2px solid #41F6D7;
     border-radius: 0 4px 4px 0;
-    width: 4px;
-    top: 50%;
-    transform: translateY(-50%);
     background: #41F6D7;
 }
 
 .language-switch-list{
     display: flex;
     gap: 7px;
-    list-style: none;
 }
 
 .language-switch-list__item{
@@ -90,20 +102,26 @@
     transition-duration: 0.2s;
 }
 
-.language-switch-list__item:not(.active):hover {
-    font-weight: bold;
-}
 
-.contacts{
+.sidebar__contacts{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.contacts__number{
+.sidebar__number{
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
+    font-family: inherit;
+    margin-right: auto;
+}
+
+.sidebar__email{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 32px;
+    margin-right: auto;
 }
 
 .sidebar-footer{
@@ -113,9 +131,32 @@
     gap: 40px;
 }
 
-.contacts__list{
+.contacts-list{
     display: flex;
     gap: 16px;
-    list-style: none;
+}
+
+.sidebar__input{
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.sidebar__lang-form{
+    display: flex;
+    gap: 7px;
+}
+
+.sidebar__label{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar__label:hover{
+    transform: scale(1.2);
+}
+
+.sidebar__input:checked + .sidebar__label{
+    opacity: 0.6;
 }
 
