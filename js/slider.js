@@ -22,7 +22,8 @@ const techSwiper = new Swiper('.technique-slider', {
 
     breakpoints: {
         768: {
-            spaceBetween: 0
+            spaceBetween: 0,
+
         }
     }
 
@@ -61,7 +62,6 @@ function handleTabletChange(e) {
 mediaQuery.addListener(handleTabletChange);
 handleTabletChange(mediaQuery);
 
-// const image = document.querySelectorAll('.more-btn__img');
 const container = document.querySelectorAll('.common-slider__list');
 const btn = document.querySelectorAll('.more-btn');
 const btnBefore = document.querySelectorAll('.more-btn::before');
@@ -69,43 +69,20 @@ console.log(btnBefore);
 
 btn.forEach((el, index) => {
     el.addEventListener('click', () => {
-        container[index].classList.toggle('expanded');
-        btn[index].classList.toggle('expanded-image');
-        if (container[index].classList.contains('expanded')) {
-            btn[index].innerHTML = "Скрыть";
-        } else {
-            btn[index].innerHTML = "Показать всё";
+        if (btn[index].textContent === "Скрыть"){
+            container[index].removeAttribute("style");
+            btn[index].textContent = "Показать всё";
+            btn[index].classList.remove('expanded-image');
+        }else {
+            console.log(btn[index].textContent);
+            container[index].style.maxHeight = container[index].scrollHeight +'px';
+            btn[index].textContent = "Скрыть";
+            btn[index].classList.add('expanded-image');
         }
+
+
     })
 })
-
-
-// btn.addEventListener('click',() => {
-//     container.classList.toggle('expanded');
-//     image.classList.toggle('expanded-image');
-//     if (container.classList.contains('expanded')){
-//         btnText.innerHTML = "Скрыть";
-//     }
-//     else {
-//         btnText.innerHTML = "Показать всё";
-//     }
-// })
-
-
-function expandFunction(rotateImage, expandContainer, buttonText) {
-    const image = document.querySelector(rotateImage);
-    const container = document.querySelector(expandContainer);
-    const btnText = document.querySelector(buttonText);
-    if (container.style.height !== 'auto') {
-        image.style.transform = 'rotate(180deg)';
-        btnText.innerHTML = "Скрыть";
-        container.classList.toggle('expanded');
-    } else if (container.style.height === 'auto') {
-        image.style.transform = 'rotate(0deg)';
-        btnText.innerHTML = "Показать всё";
-        container.classList.toggle('expanded')
-    }
-}
 
 
 

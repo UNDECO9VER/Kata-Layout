@@ -408,9 +408,6 @@ html {
         gap: 32px;
     }
 
-    .title::before {
-
-    }
 
     .header__list-item {
         display: flex;
