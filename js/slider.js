@@ -1,4 +1,4 @@
-const brandSwiper = new Swiper('.brand-slider', {
+const brandSwiper = new Swiper('.slider-section__brand-slider', {
     pagination: {
         el: '.swiper-pagination',
     },
