@@ -62,7 +62,7 @@ function handleTabletChange(e) {
 mediaQuery.addListener(handleTabletChange);
 handleTabletChange(mediaQuery);
 
-const container = document.querySelectorAll('.common-slider__list');
+const container = document.querySelectorAll('.slider-section__list');
 const btn = document.querySelectorAll('.more-btn');
 const btnBefore = document.querySelectorAll('.more-btn::before');
 console.log(btnBefore);

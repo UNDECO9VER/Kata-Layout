@@ -16,7 +16,7 @@ ul{
     list-style: none;
 }
 
-.brand-slide{
+.slider-section__slide{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ ul{
     border: 1px solid #EAEAEA;
     background: white;
     border-radius: 6px;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 .technique-slide{
@@ -44,10 +44,10 @@ ul{
     border: 1px solid #EAEAEA;
     background: white;
     border-radius: 6px;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
-.common-slider__slide{
+.slider-section__item{
     width: auto;
     display: flex;
 }
@@ -64,7 +64,7 @@ ul{
 
 
 
-.common-slider{
+.slider-section__slider{
     display: flex;
     gap: 16px;
     padding: 16px;
@@ -85,7 +85,7 @@ ul{
     height: 40px;
 }
 
-.wrapper-header{
+.slider-section__header{
     line-height: 24px;
     font-weight: normal;
     padding: 16px;
@@ -117,8 +117,6 @@ ul{
 .more-btn {
     display: flex;
     align-items: center;
-    min-height: 40px;
-    max-width: 120px;
     gap: 10px;
     background: inherit;
     border: inherit;
@@ -129,14 +127,14 @@ ul{
     display: none;
 }
 
-.brand-slide:hover{
+.slider-section__slide:hover{
     opacity: 0.6;
 }
 
 
 
 .more-btn__img{
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 
@@ -161,7 +159,7 @@ ul{
         transform: rotate(-180deg);
     }
 
-    .common-slider__list{
+    .slider-section__list{
         overflow-y: hidden;
         height: auto;
         max-height: 170px;
@@ -173,7 +171,7 @@ ul{
         transition: max-height 0.3s;
     }
 
-    .brand-slide{
+    .slider-section__slide{
         width: 100%;
     }
 
@@ -185,7 +183,7 @@ ul{
 
 @media (min-width: 1120px){
 
-    .common-slider__list{
+    .slider-section__list{
         grid-template-columns: repeat(4, 1fr);
     }
 
