@@ -89,10 +89,8 @@ ul{
     line-height: 24px;
     font-weight: normal;
     padding: 16px;
-    display: flex;
     align-items: center;
     border-top: 1px solid #D9FFF5;
-    min-height: 60px;
     font-size: 16px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
@@ -115,9 +113,8 @@ ul{
 }
 
 .more-btn {
-    display: flex;
+    display: inline-block;
     align-items: center;
-    gap: 10px;
     background: inherit;
     border: inherit;
     transition: all 0.3s ease;
@@ -141,11 +138,12 @@ ul{
 @media (min-width: 768px){
     .more-btn{
         font-family: 'TT Lakes';
-        white-space: nowrap;
+        padding-left: 4px;
         font-size: 16px;
-        padding-left: 16px;
+        gap: 16px;
         display: flex;
         cursor: pointer;
+        align-self: flex-start;
     }
 
 
@@ -167,7 +165,7 @@ ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         flex-wrap: wrap;
-        transform: translate3d(0,0,0) !important;
+        /*transform: translate3d(0,0,0) !important;*/
         transition: max-height 0.3s;
     }
 

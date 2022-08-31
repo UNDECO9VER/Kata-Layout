@@ -27,11 +27,6 @@ button{
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 }
 
-.sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .sidebar-header--layout{
     display: flex;
@@ -92,10 +87,6 @@ button{
     background: #41F6D7;
 }
 
-.language-switch-list{
-    display: flex;
-    gap: 7px;
-}
 
 .language-switch-list__item{
     cursor: pointer;
@@ -124,12 +115,6 @@ button{
     margin-right: auto;
 }
 
-.sidebar-footer{
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
 
 .contacts-list{
     display: flex;
